@@ -55,10 +55,10 @@
   <body>
     <header>
       <h1>My Training Diary</h1>
-        <h3>Name: Ankur</h3>
-        <h3>URN: </h3>
-        <h3>Section: D3CSA1</h3>
-        <h3>Course: Training (TR-102)</h3>
+      <h3>Name: Ankur</h3>
+      <h3>URN:</h3>
+      <h3>Section: D3CSA1</h3>
+      <h3>Course: Training (TR-102)</h3>
     </header>
 
     <!-- Week 1 -->
@@ -66,19 +66,150 @@
       <h2>Week 1</h2>
       <div class="day-entry">
         <h4>Monday (23 June 2025)</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nemo libero fugiat officia alias? Dolore expedita optio voluptas incidunt explicabo quasi iste tempore tempora, rerum dignissimos autem. Quia, illo labore?</p>
+        <p>
+          Today I did research for the project that I am going to work on. I
+          will be working on <em>AI-Based Plant disease detection system</em>. I went
+          through several research papers and online reading materials regarding
+          the same. The references are as follows:
+        </p>
+        <ol>
+          <li>
+            <strong>Tan, Mingxing, and Quoc V. Le.</strong><br />
+            <em
+              >"EfficientNet: Rethinking model scaling for convolutional neural
+              networks."</em
+            >
+            ICML (2019).
+            <p>
+              This paper introduces EfficientNet, a model family that optimally
+              scales width, depth, and resolution together for CNNs. It achieves
+              state-of-the-art accuracy with fewer parameters and is ideal for
+              mobile deployment, making it suitable for applications like plant
+              disease detection.
+              <br /><a href="https://arxiv.org/abs/1905.11946" target="_blank"
+                >View Paper</a
+              >
+            </p>
+          </li>
+
+          <li>
+            <strong>Agarwal, Mohit et al.</strong><br />
+            <em
+              >"ToLeD: Tomato leaf disease detection using convolution neural
+              network."</em
+            >
+            Procedia Computer Science 167 (2020): 293–301.
+            <p>
+              This study presents a custom CNN model trained on the PlantVillage
+              dataset to classify tomato leaf diseases with over 91% accuracy.
+              It compares well against larger pre-trained models and shows that
+              lighter architectures can be highly effective in agricultural
+              diagnostics.
+              <br /><a
+                href="https://doi.org/10.1016/j.procs.2020.03.225"
+                target="_blank"
+                >View Paper</a
+              >
+            </p>
+          </li>
+
+          <li>
+            <strong>Sharma, Parul et al.</strong><br />
+            <em
+              >"Performance analysis of deep learning CNN models for disease
+              detection in plants using image segmentation."</em
+            >
+            Information Processing in Agriculture 7.4 (2020): 566–574.
+            <p>
+              The authors compare full-leaf and segmented-leaf inputs in
+              CNN-based plant disease detection. Their segmented CNN (S-CNN)
+              model significantly outperforms others, achieving 98.6% accuracy
+              even on unseen real-world images, emphasizing the importance of
+              preprocessing.
+              <br /><a
+                href="https://doi.org/10.1016/j.inpa.2019.11.001"
+                target="_blank"
+                >View Paper</a
+              >
+            </p>
+          </li>
+        </ol>
       </div>
       <div class="day-entry">
         <h4>Tuesday (24 June 2025)</h4>
-        <p>[Your log here]</p>
+        <p>Did furthur research and discussions on the same topic.</p>
+        <ol>
+          <li>
+            <strong>Brahimi, Mohammed et al.</strong><br />
+            <em
+              >"Deep learning for tomato diseases: Classification and symptoms
+              visualization."</em
+            >
+            Applied Artificial Intelligence 31.4 (2017): 299–315.
+            <p>
+              This work trains a CNN on over 14,000 tomato leaf images and
+              integrates symptom visualization using saliency maps. The model
+              achieves over 99% classification accuracy and provides visual
+              explanations for disease predictions.
+              <br /><a
+                href="https://doi.org/10.1080/08839514.2017.1315516"
+                target="_blank"
+                >View Paper</a
+              >
+            </p>
+          </li>
+
+          <li>
+            <strong>Huyen, Chip.</strong><br />
+            <em>"AI Engineering."</em> O'Reilly Media, Inc. (2024).
+            <p>
+              This book outlines the practical, engineering side of AI systems,
+              including deployment, feedback loops, monitoring, and edge
+              computing. It’s highly relevant for turning machine learning
+              models into scalable applications like your mobile plant disease
+              app.
+            </p>
+          </li>
+
+          <li>
+            <strong>Nagpal, Vaibhav.</strong><br />
+            <em>"Memory-efficient deep learning models."</em> Medium – Data
+            Scientist’s Diary (2021).
+            <p>
+              This blog post discusses how to build deep learning models that
+              use less memory, focusing on architectures like MobileNet,
+              SqueezeNet, and EfficientNet. It provides practical insights for
+              model deployment on devices with limited compute resources.
+              <br /><a
+                href="https://medium.com/data-scientists-diary/memory-efficient-deep-learning-models-2ac95662d939"
+                target="_blank"
+                >Read Article</a
+              >
+            </p>
+          </li>
+        </ol>
       </div>
       <div class="day-entry">
         <h4>Wednesday (25 June 2025)</h4>
-        <p>[Your log here]</p>
+        <p><ul>
+  <li>Started the development phase of the project.</li>
+  <li>Set up the environment using Google Colab.</li>
+  <li>Gathered and explored the dataset.</li>
+  <li>Learned and applied basic image preprocessing techniques (resizing, augmentation).</li>
+  <li>Studied TensorFlow documentation on transfer learning to build foundational understanding for the model.</li>
+</ul></p>
       </div>
       <div class="day-entry">
         <h4>Thursday (26 June 2025)</h4>
-        <p>[Your log here]</p>
+        <p><ul>
+  <li>Continued working with the tomato disease subset of the PlantVillage dataset, which I had collected and organized earlier.</li>
+  <li>While analyzing the dataset, I observed that the number of images per class (i.e., per disease type) was uneven. Some disease categories had a large number of samples, while others had very few.</li>
+  <li>Recognized that this imbalance could lead to a biased model — one that performs well on dominant classes but poorly on underrepresented ones, resulting in inaccurate predictions.</li>
+  <li>Started researching how to deal with this imbalance and came across the concept of class weighting as a form of normalization during training.</li>
+  <li>Learnt how to assign class weights in TensorFlow so that the model gives more importance to the minority classes, helping it generalize better across all categories.</li>
+  <li>Implemented class weights in my training configuration — ensuring that classes with fewer images contribute more significantly to the loss function.</li>
+  <li>This way, the model is encouraged to pay more attention to the underrepresented classes, even if it sees fewer examples of them during training.</li>
+</ul></p>
       </div>
       <div class="day-entry">
         <h4>Friday (27 June 2025)</h4>
